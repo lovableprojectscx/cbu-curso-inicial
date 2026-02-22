@@ -45,15 +45,16 @@ const HeroSection = () => {
         </div>
 
         <div
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 animate-fade-up"
+          className="inline-flex items-center gap-3 px-5 py-2.5 rounded-2xl mb-6 animate-fade-up shadow-lg backdrop-blur-md"
           style={{
-            background: "hsl(var(--gold) / 0.2)",
-            border: "1px solid hsl(var(--gold) / 0.4)",
+            background: "rgba(255, 255, 255, 0.1)",
+            border: "1px solid rgba(212, 175, 55, 0.3)",
             animationDelay: "0.1s",
           }}
         >
-          <img src={ageupLogo} alt="AGEUP" className="h-5 w-5 object-contain" />
-          <span className="text-gold text-sm font-heading font-600 tracking-wider uppercase">CBU · AGEUP · IFES</span>
+          <img src={ageupLogo} alt="AGEUP" className="h-10 w-auto object-contain drop-shadow-md" />
+          <div className="h-8 w-px bg-white/20 mx-1" />
+          <span className="text-white font-heading font-700 tracking-wider text-xs md:text-sm">MOVIMIENTO ESTUDIANTIL AGEUP · IFES</span>
         </div>
 
         <h1

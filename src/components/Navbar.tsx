@@ -1,5 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import cbuLogo from "@/assets/cbu-logo.png";
+import ageupLogo from "@/assets/ageup-logo.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -16,11 +17,14 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-card-light border-b border-white/40">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <button onClick={goHome} className="flex items-center gap-3 cursor-pointer">
-          <img src={cbuLogo} alt="CBU" className="h-10 w-10 rounded-lg object-cover" />
-          <div className="text-left">
+        <button onClick={goHome} className="flex items-center gap-2 cursor-pointer group">
+          <div className="flex items-center -space-x-2">
+            <img src={cbuLogo} alt="CBU" className="h-10 w-10 rounded-lg object-cover border-2 border-white shadow-sm z-10" />
+            <img src={ageupLogo} alt="AGEUP" className="h-8 w-8 rounded-lg object-contain bg-white p-1 border border-gray-100 shadow-sm transition-transform group-hover:translate-x-1" />
+          </div>
+          <div className="text-left ml-2">
             <p className="font-heading font-800 text-sm text-crimson leading-tight">CBU</p>
-            <p className="text-xs text-muted-foreground leading-tight">Comunidad Bíblica Universitaria</p>
+            <p className="text-[10px] text-muted-foreground leading-tight font-600">AGEUP · IFES</p>
           </div>
         </button>
         <div className="hidden md:flex items-center gap-6">

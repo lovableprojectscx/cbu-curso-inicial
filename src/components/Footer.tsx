@@ -1,5 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import cbuLogo from "@/assets/cbu-logo.png";
+import ageupLogo from "@/assets/ageup-logo.png";
 import { Heart, Instagram, Facebook, Mail } from "lucide-react";
 
 const TikTokIcon = ({ size = 16, className = "" }: { size?: number; className?: string }) => (
@@ -53,11 +54,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4 cursor-pointer" onClick={(e) => handleNavClick("/", e)}>
-              <img src={cbuLogo} alt="CBU" className="h-12 w-12 rounded-xl" />
+            <div className="flex items-center gap-4 mb-4 cursor-pointer group" onClick={(e) => handleNavClick("/", e)}>
+              <div className="flex items-center -space-x-2">
+                <img src={cbuLogo} alt="CBU" className="h-14 w-14 rounded-xl border-2 border-white/10 z-10" />
+                <img src={ageupLogo} alt="AGEUP" className="h-10 w-10 rounded-lg object-contain bg-white p-1 transition-transform group-hover:translate-x-1" />
+              </div>
               <div>
-                <p className="font-heading font-800 text-white text-lg leading-tight">CBU</p>
-                <p className="text-white/50 text-xs">Parte de AGEUP · Afiliada a IFES</p>
+                <p className="font-heading font-800 text-white text-xl leading-tight">CBU</p>
+                <p className="text-white/50 text-[10px] font-600 tracking-wide uppercase">Comunidad Bíblica Universitaria</p>
+                <p className="text-gold/80 text-[10px] font-700">Afiliada a AGEUP · IFES</p>
               </div>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">

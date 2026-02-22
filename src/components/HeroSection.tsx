@@ -12,7 +12,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-[100dvh] md:min-h-screen flex flex-col items-center pt-28 pb-12 md:pt-0 md:pb-0 md:justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-[100dvh] md:min-h-screen flex flex-col items-center pt-24 pb-12 md:pt-0 md:pb-0 md:justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBg})` }} />
       <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />

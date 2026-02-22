@@ -58,10 +58,10 @@ const RegistrationForm = () => {
   };
 
   return (
-    <section id="registration" className="pt-32 pb-24 px-4 bg-background">
+    <section id="registration" className="pt-24 pb-16 px-4 bg-background">
       <div className="container mx-auto max-w-2xl">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-16">
+        <div className="text-center mb-8 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4"
             style={{ background: "hsl(var(--crimson) / 0.08)", border: "1px solid hsl(var(--crimson) / 0.2)" }}>
             <span className="text-crimson text-sm font-heading font-600 tracking-wider uppercase">
@@ -84,7 +84,7 @@ const RegistrationForm = () => {
               <span className="font-heading font-700 text-foreground">Datos de Inscripción</span>
             </div>
 
-            <div className="p-8 space-y-5">
+            <div className="p-6 sm:p-8 space-y-5">
               <div>
                 <label className={labelClass}>Nombre Completo *</label>
                 <input className={inputClass} placeholder="Ej: María González López" value={form.fullName} onChange={set("fullName")} required />

@@ -24,7 +24,6 @@ const Footer = () => {
     { label: "Módulos", path: "/#modules" },
     { label: "Quiz Misionero", path: "/quiz" },
     { label: "Inscripción", path: "/inscripcion" },
-    { label: "Recursos", path: "/recursos" },
   ];
 
   const handleNavClick = (path: string, e: React.MouseEvent) => {

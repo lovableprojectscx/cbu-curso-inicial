@@ -32,7 +32,6 @@ const Navbar = () => {
             { label: "Inicio", path: "/#hero" },
             { label: "Módulos", path: "/#modules" },
             { label: "Quiz", path: "/quiz" },
-            { label: "Recursos", path: "/recursos" },
           ].map((item) => (
             <a
               key={item.path}

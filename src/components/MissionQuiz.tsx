@@ -97,7 +97,7 @@ const MissionQuiz = () => {
   const progress = ((currentQ) / questions.length) * 100;
 
   return (
-    <section id="quiz" className="pt-20 pb-20 px-4 relative overflow-hidden"
+    <section id="quiz" className="pt-20 pb-20 px-3 sm:px-4 relative overflow-hidden"
       style={{ background: "linear-gradient(180deg, hsl(0 95% 22%) 0%, hsl(0 85% 18%) 100%)" }}>
       {/* Decorative blur */}
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-10"
@@ -125,7 +125,7 @@ const MissionQuiz = () => {
         </div>
 
         {!result ? (
-          <div className="glass-card rounded-2xl p-8">
+          <div className="glass-card rounded-2xl p-5 sm:p-8">
             {/* Progress bar */}
             <div className="mb-8">
               <div className="flex justify-between text-white/60 text-sm mb-2">
@@ -176,7 +176,7 @@ const MissionQuiz = () => {
             </div>
           </div>
         ) : (
-          <div className="glass-card rounded-2xl p-6 sm:p-8 text-center animate-fade-up">
+          <div className="glass-card rounded-2xl p-5 sm:p-8 text-center animate-fade-up">
             <div className="text-5xl sm:text-6xl mb-4">{results[result].emoji}</div>
             <CheckCircle size={40} className="mx-auto mb-4" style={{ color: "hsl(var(--gold))" }} />
             <h3 className="text-white font-heading font-800 text-2xl md:text-3xl mb-3">

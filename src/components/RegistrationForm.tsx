@@ -58,7 +58,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <section id="registration" className="py-24 px-4 bg-background">
+    <section id="registration" className="pt-32 pb-24 px-4 bg-background">
       <div className="container mx-auto max-w-2xl">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-16">

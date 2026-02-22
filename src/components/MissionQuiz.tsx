@@ -97,7 +97,7 @@ const MissionQuiz = () => {
   const progress = ((currentQ) / questions.length) * 100;
 
   return (
-    <section id="quiz" className="py-24 px-4 relative overflow-hidden"
+    <section id="quiz" className="pt-32 pb-24 px-4 relative overflow-hidden"
       style={{ background: "linear-gradient(180deg, hsl(0 95% 22%) 0%, hsl(0 85% 18%) 100%)" }}>
       {/* Decorative blur */}
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-10"

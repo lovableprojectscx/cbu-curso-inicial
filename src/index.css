@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* AGEUP CBU Brand Colors */
+    --crimson: 0 95% 22%;         /* Deep maroon #6E0000 */
+    --crimson-light: 0 85% 32%;   /* #9A1A1A */
+    --gold: 37 92% 54%;           /* #F5A51E */
+    --gold-light: 42 95% 65%;     /* #F7BE47 */
+
+    --background: 30 20% 97%;
+    --foreground: 0 5% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 5% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 5% 10%;
+
+    --primary: 0 95% 22%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 37 92% 54%;
+    --secondary-foreground: 0 5% 10%;
+
+    --muted: 30 15% 93%;
+    --muted-foreground: 0 5% 45%;
+
+    --accent: 37 92% 54%;
+    --accent-foreground: 0 5% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 0 95% 22%;
+
+    --radius: 12px;
+
+    /* Design tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(0 95% 15% / 0.92), hsl(0 85% 28% / 0.85));
+    --gradient-gold: linear-gradient(135deg, hsl(37 92% 54%), hsl(42 95% 65%));
+    --gradient-section: linear-gradient(180deg, hsl(30 20% 97%), hsl(0 15% 94%));
+    --shadow-card: 0 4px 20px hsl(0 95% 22% / 0.08), 0 1px 4px hsl(0 0% 0% / 0.05);
+    --shadow-glow: 0 0 30px hsl(37 92% 54% / 0.3);
+    --shadow-deep: 0 20px 60px hsl(0 95% 22% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-card {
+    background: hsl(0 0% 100% / 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsl(0 0% 100% / 0.15);
+  }
+
+  .glass-card-light {
+    background: hsl(0 0% 100% / 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid hsl(0 0% 100% / 0.6);
+  }
+
+  .module-card {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .module-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-deep);
+    border-color: hsl(var(--gold));
+  }
+
+  .btn-crimson {
+    background: hsl(var(--crimson));
+    color: hsl(var(--primary-foreground));
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border-radius: 10px;
+    padding: 14px 32px;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 14px hsl(0 95% 22% / 0.35);
+  }
+
+  .btn-crimson:hover {
+    background: hsl(var(--crimson-light));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px hsl(0 95% 22% / 0.45);
+  }
+
+  .btn-gold {
+    background: var(--gradient-gold);
+    color: hsl(0 5% 10%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border-radius: 10px;
+    padding: 14px 32px;
+    transition: all 0.25s ease;
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px hsl(37 92% 54% / 0.5);
+  }
+
+  .section-divider {
+    width: 60px;
+    height: 4px;
+    background: var(--gradient-gold);
+    border-radius: 2px;
+  }
+
+  .step-active {
+    background: hsl(var(--crimson));
+    color: white;
+    border-color: hsl(var(--crimson));
+  }
+
+  .step-done {
+    background: hsl(var(--gold));
+    color: hsl(0 5% 10%);
+    border-color: hsl(var(--gold));
+  }
+
+  .step-pending {
+    background: hsl(var(--muted));
+    color: hsl(var(--muted-foreground));
+    border-color: hsl(var(--border));
+  }
+}

@@ -33,7 +33,7 @@ const RegistrationForm = () => {
     setError(null);
 
     try {
-      const scriptURL = "https://script.google.com/macros/s/AKfycbzvDBTgAhLWUdkmOyJZRf6Vs5-jnKe3LRjGFjSoCFwcCENKOZE0KAU7SBQrBvpfi6kM8w/exec";
+      const scriptURL = "https://script.google.com/macros/s/AKfycbzDmP44ugvVa2QwjItUHx-e_g-de5ABNXBxmyDNzc_Nbv5P5EnqUXiF3j6Q90FiaW-wkQ/exec";
 
       const formData = new URLSearchParams();
       Object.entries(form).forEach(([key, value]) => {

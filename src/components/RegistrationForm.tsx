@@ -10,8 +10,8 @@ type FormData = {
   howDidYouHear: string;
 };
 
-const inputClass = "w-full px-4 py-3 rounded-xl font-body text-foreground text-sm transition-all duration-200 outline-none focus:ring-2"
-  + " bg-background border border-border focus:ring-crimson/30 focus:border-crimson/50";
+const inputClass = "w-full px-5 py-3.5 rounded-xl font-body text-foreground text-sm transition-all duration-300 outline-none focus:ring-2"
+  + " bg-background border border-border focus:ring-crimson/30 focus:border-crimson/50 shadow-sm hover:border-crimson/30";
 
 const labelClass = "block text-sm font-heading font-600 text-foreground/80 mb-1.5";
 
@@ -58,10 +58,10 @@ const RegistrationForm = () => {
   };
 
   return (
-    <section id="registration" className="pt-24 pb-16 px-4 bg-background">
+    <section id="registration" className="pt-20 pb-20 px-4 bg-background">
       <div className="container mx-auto max-w-2xl">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4"
             style={{ background: "hsl(var(--crimson) / 0.08)", border: "1px solid hsl(var(--crimson) / 0.2)" }}>
             <span className="text-crimson text-sm font-heading font-600 tracking-wider uppercase">
@@ -84,7 +84,7 @@ const RegistrationForm = () => {
               <span className="font-heading font-700 text-foreground">Datos de Inscripción</span>
             </div>
 
-            <div className="p-6 sm:p-8 space-y-5">
+            <div className="p-8 sm:p-10 space-y-7">
               <div>
                 <label className={labelClass}>Nombre Completo *</label>
                 <input className={inputClass} placeholder="Ej: María González López" value={form.fullName} onChange={set("fullName")} required />

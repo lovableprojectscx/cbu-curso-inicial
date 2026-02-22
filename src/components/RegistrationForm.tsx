@@ -35,13 +35,15 @@ const RegistrationForm = () => {
     try {
       const scriptURL = "https://script.google.com/macros/s/AKfycbzvDBTgAhLWUdkmOyJZRf6Vs5-jnKe3LRjGFjSoCFwcCENKOZE0KAU7SBQrBvpfi6kM8w/exec";
 
-      const response = await fetch(scriptURL, {
+      const formData = new URLSearchParams();
+      Object.entries(form).forEach(([key, value]) => {
+        formData.append(key, value);
+      });
+
+      await fetch(scriptURL, {
         method: "POST",
-        mode: "no-cors", // Required for Google Apps Script
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
+        mode: "no-cors",
+        body: formData,
       });
 
       // Since mode is 'no-cors', we won't get a proper response body, 

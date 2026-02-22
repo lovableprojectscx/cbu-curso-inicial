@@ -17,6 +17,7 @@ const labelClass = "block text-sm font-heading font-600 text-foreground/80 mb-1.
 
 const RegistrationForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState<FormData>({
     fullName: "", phone: "", email: "", gender: "",

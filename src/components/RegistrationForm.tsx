@@ -69,7 +69,7 @@ const RegistrationForm = () => {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-800 text-foreground mb-4">
-            Únete a la <span className="text-gradient-gold">CBU</span>
+            Curso <span className="text-gradient-gold">Inicial</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
             Únete al Curso Inicial. Solo necesitamos algunos datos básicos.

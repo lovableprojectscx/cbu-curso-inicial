@@ -61,15 +61,15 @@ const RegistrationForm = () => {
     <section id="registration" className="py-24 px-4 bg-background">
       <div className="container mx-auto max-w-2xl">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4"
             style={{ background: "hsl(var(--crimson) / 0.08)", border: "1px solid hsl(var(--crimson) / 0.2)" }}>
             <span className="text-crimson text-sm font-heading font-600 tracking-wider uppercase">
               Inscripción
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-heading font-800 text-foreground mb-4">
-            Da el <span className="text-gradient-gold">Primer Paso</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-800 text-foreground mb-4">
+            Únete a la <span className="text-gradient-gold">CBU</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
             Únete al Curso Inicial. Solo necesitamos algunos datos básicos.
@@ -151,7 +151,7 @@ const RegistrationForm = () => {
               style={{ background: "var(--gradient-gold)" }}>
               <CheckCircle size={44} style={{ color: "hsl(0 5% 10%)" }} />
             </div>
-            <h3 className="text-3xl font-heading font-800 text-foreground mb-4">
+            <h3 className="text-2xl sm:text-3xl font-heading font-800 text-foreground mb-4">
               ¡Inscripción Exitosa!
             </h3>
             <p className="text-muted-foreground text-lg max-w-md mx-auto mb-8">

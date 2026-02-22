@@ -115,7 +115,7 @@ const MissionQuiz = () => {
               Quiz Misionero
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-heading font-800 text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-800 text-white mb-4">
             Quiz de Identidad <span className="text-gradient-gold">Misionera</span>
           </h2>
           <p className="text-white/70 text-lg">
@@ -140,7 +140,7 @@ const MissionQuiz = () => {
               </div>
             </div>
 
-            <h3 className="text-white font-heading font-700 text-xl md:text-2xl mb-8 text-center">
+            <h3 className="text-white font-heading font-700 text-lg sm:text-xl md:text-2xl mb-8 text-center">
               {questions[currentQ].question}
             </h3>
 
@@ -176,8 +176,8 @@ const MissionQuiz = () => {
             </div>
           </div>
         ) : (
-          <div className="glass-card rounded-2xl p-8 text-center animate-fade-up">
-            <div className="text-6xl mb-4">{results[result].emoji}</div>
+          <div className="glass-card rounded-2xl p-6 sm:p-8 text-center animate-fade-up">
+            <div className="text-5xl sm:text-6xl mb-4">{results[result].emoji}</div>
             <CheckCircle size={40} className="mx-auto mb-4" style={{ color: "hsl(var(--gold))" }} />
             <h3 className="text-white font-heading font-800 text-2xl md:text-3xl mb-3">
               ¡Eres {results[result].title}!

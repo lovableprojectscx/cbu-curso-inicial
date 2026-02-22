@@ -58,20 +58,20 @@ const HeroSection = () => {
         </div>
 
         <h1
-          className="text-5xl md:text-7xl font-heading font-900 text-white mb-4 animate-fade-up leading-tight"
+          className="text-4xl sm:text-5xl md:text-7xl font-heading font-900 text-white mb-2 sm:mb-4 animate-fade-up leading-tight"
           style={{ animationDelay: "0.2s", textShadow: "0 2px 20px hsl(0 0% 0% / 0.3)" }}
         >
           Curso Inicial
         </h1>
         <h2
-          className="text-2xl md:text-3xl font-heading font-700 mb-6 animate-fade-up"
+          className="text-xl sm:text-2xl md:text-3xl font-heading font-700 mb-6 animate-fade-up"
           style={{ animationDelay: "0.3s", color: "hsl(var(--gold))" }}
         >
           Comunidad Bíblica Universitaria
         </h2>
 
         <p
-          className="text-white/85 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-up leading-relaxed"
+          className="text-white/85 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-up leading-relaxed"
           style={{ animationDelay: "0.4s" }}
         >
           Descubre quiénes somos, hacia dónde vamos y cómo la CBU, parte del ministerio estudiantil de AGEUP, puede

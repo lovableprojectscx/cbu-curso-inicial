@@ -163,7 +163,7 @@ const ModulesSection = () => {
 
                   {/* Card */}
                   <div
-                    className="flex-1 w-full md:max-w-[calc(50%-3rem)] rounded-2xl p-6 cursor-pointer transition-all duration-300 group"
+                    className="flex-1 w-full md:max-w-[calc(50%-3rem)] rounded-2xl p-4 sm:p-6 cursor-pointer transition-all duration-300 group"
                     onClick={() => setActiveModule(isActive ? null : idx)}
                     style={{
                       background: "hsl(var(--card))",
@@ -230,8 +230,8 @@ const ModulesSection = () => {
                       />
                     </div>
 
-                    <div className={`overflow-hidden transition-all duration-400 ${isActive ? "max-h-40 opacity-100 mt-4" : "max-h-0 opacity-0"}`}>
-                      <p className="text-muted-foreground text-sm leading-relaxed pl-16">
+                    <div className={`overflow-hidden transition-all duration-400 ${isActive ? "max-h-60 opacity-100 mt-4" : "max-h-0 opacity-0"}`}>
+                      <p className="text-muted-foreground text-sm leading-relaxed pl-1 md:pl-16">
                         {mod.description}
                       </p>
                     </div>

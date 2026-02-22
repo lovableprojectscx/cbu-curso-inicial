@@ -65,7 +65,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-              Formando estudiantes que transformen sus universidades y el mundo a través del evangelio de Jesucristo.
+              Lanzamiento del Curso Inicial de la CBU UNSCH, parte del movimiento estudiantil AGEUP · IFES.
             </p>
           </div>
 
@@ -119,9 +119,6 @@ const Footer = () => {
           style={{ borderColor: "hsl(0 0% 100% / 0.1)" }}>
           <p className="text-white/40 text-sm">
             © 2026 CBU · AGEUP · Afiliada a IFES · Todos los derechos reservados
-          </p>
-          <p className="text-white/40 text-sm flex items-center gap-1.5">
-            Hecho con <Heart size={12} style={{ color: "hsl(var(--gold))" }} /> para el ministerio estudiantil
           </p>
         </div>
       </div>

@@ -58,7 +58,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <section id="registration" className="pt-20 pb-20 px-4 bg-background">
+    <section id="registration" className="pt-20 pb-20 px-3 sm:px-4 bg-background">
       <div className="container mx-auto max-w-2xl">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-16">
@@ -84,7 +84,7 @@ const RegistrationForm = () => {
               <span className="font-heading font-700 text-foreground">Datos de Inscripción</span>
             </div>
 
-            <div className="p-8 sm:p-10 space-y-7">
+            <div className="p-5 sm:p-10 space-y-7">
               <div>
                 <label className={labelClass}>Nombre Completo *</label>
                 <input className={inputClass} placeholder="Ej: María González López" value={form.fullName} onChange={set("fullName")} required />

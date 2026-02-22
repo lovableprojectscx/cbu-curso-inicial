@@ -12,7 +12,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-[100dvh] md:min-h-screen flex flex-col items-center pt-28 pb-12 md:pt-0 md:pb-0 md:justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBg})` }} />
       <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
@@ -34,7 +34,7 @@ const HeroSection = () => {
             <img
               src={cbuLogo}
               alt="CBU"
-              className="h-28 w-28 rounded-2xl shadow-2xl animate-float"
+              className="h-20 w-20 sm:h-28 sm:w-28 rounded-2xl shadow-2xl animate-float"
               style={{ boxShadow: "0 20px 60px hsl(0 0% 0% / 0.5)" }}
             />
             <div
@@ -79,16 +79,16 @@ const HeroSection = () => {
         </p>
 
         {/* Stats */}
-        <div className="flex flex-wrap justify-center gap-8 mb-12 animate-fade-up" style={{ animationDelay: "0.5s" }}>
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mb-8 sm:mb-12 animate-fade-up" style={{ animationDelay: "0.5s" }}>
           {[
             { icon: Users, value: "7", label: "Módulos Temáticos" },
             { icon: BookOpen, value: "CBU", label: "Comunidad Viva" },
             { icon: Globe, value: "IFES", label: "Red Mundial" },
           ].map(({ icon: Icon, value, label }) => (
-            <div key={label} className="glass-card rounded-2xl px-6 py-4 text-center">
-              <Icon className="mx-auto mb-1 text-gold" size={22} />
-              <p className="text-gold font-heading font-800 text-2xl">{value}</p>
-              <p className="text-white/70 text-xs font-500">{label}</p>
+            <div key={label} className="glass-card rounded-2xl px-4 py-3 sm:px-6 sm:py-4 text-center min-w-[100px] sm:min-w-0">
+              <Icon className="mx-auto mb-1 text-gold" size={18} sm-size={22} />
+              <p className="text-gold font-heading font-800 text-xl sm:text-2xl">{value}</p>
+              <p className="text-white/70 text-[10px] sm:text-xs font-500">{label}</p>
             </div>
           ))}
         </div>

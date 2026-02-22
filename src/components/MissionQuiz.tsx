@@ -45,25 +45,25 @@ const results: Record<string, { title: string; description: string; color: strin
     title: "El Pastor Universitario",
     description: "Tienes un corazón para el cuidado y el acompañamiento. En la CBU, serías clave en el discipulado y en los grupos de célula, siendo ese amigo que todos necesitan.",
     color: "hsl(0 85% 32%)",
-    emoji: "🤲",
+    emoji: "",
   },
   scholar: {
     title: "El Estudiante de la Palabra",
     description: "Tu amor por la Biblia y la reflexión profunda te hace un pilar del compromiso con las Escrituras. Serías el que guía los estudios bíblicos con profundidad y rigor.",
     color: "hsl(37 92% 40%)",
-    emoji: "📖",
+    emoji: "",
   },
   builder: {
     title: "El Constructor de Comunidad",
     description: "Tienes el don de unir personas y crear sentido de pertenencia. En la CBU, liderarías la vida comunitaria y harías que cada estudiante se sienta bienvenido.",
     color: "hsl(0 95% 22%)",
-    emoji: "🏗️",
+    emoji: "",
   },
   evangelist: {
     title: "El Misionero del Campus",
     description: "Tu pasión por compartir el evangelio te define. Serías el motor de la evangelización creativa, llevando las buenas nuevas a cada rincón de tu universidad.",
     color: "hsl(37 75% 38%)",
-    emoji: "🌍",
+    emoji: "",
   },
 };
 
@@ -112,7 +112,7 @@ const MissionQuiz = () => {
             style={{ background: "hsl(var(--gold) / 0.2)", border: "1px solid hsl(var(--gold) / 0.4)" }}>
             <Compass size={16} style={{ color: "hsl(var(--gold))" }} />
             <span className="text-sm font-heading font-600 tracking-wider uppercase" style={{ color: "hsl(var(--gold))" }}>
-              Quiz Misionero ✨
+              Quiz Misionero
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-800 text-white mb-4">

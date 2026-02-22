@@ -97,7 +97,7 @@ const HeroSection = () => {
           style={{ animationDelay: "0.6s" }}
         >
           <button onClick={() => navigate("/inscripcion")} className="btn-gold text-base no-underline">
-            ✨ Inscríbete Ahora
+            Inscríbete Ahora
           </button>
           <button
             onClick={scrollToModules}

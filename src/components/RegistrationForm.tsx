@@ -159,7 +159,7 @@ const RegistrationForm = () => {
             </p>
             <div className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-heading font-700"
               style={{ background: "hsl(var(--crimson) / 0.08)", border: "1px solid hsl(var(--crimson) / 0.25)", color: "hsl(var(--crimson))" }}>
-              🕊️ ¡Bienvenido/a al movimiento estudiantil!
+              ¡Bienvenido/a al movimiento estudiantil!
             </div>
           </div>
         )}

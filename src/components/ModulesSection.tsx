@@ -190,7 +190,7 @@ const ModulesSection = () => {
                           {idx === 6 && (
                             <span className="text-xs font-heading font-700 px-2.5 py-1 rounded-full"
                               style={{ background: "hsl(var(--gold) / 0.15)", color: "hsl(var(--gold))", border: "1px solid hsl(var(--gold) / 0.3)" }}>
-                              ⭐ Final
+                              Final
                             </span>
                           )}
                           {/* Mobile number */}
@@ -251,7 +251,7 @@ const ModulesSection = () => {
         </div>
 
         <p className="text-center text-muted-foreground text-sm mt-10">
-          💡 <span className="font-600">Tip:</span> Haz clic en cada módulo para leer más detalles
+          <span className="font-600">Tip:</span> Haz clic en cada módulo para leer más detalles
         </p>
       </div>
     </section>
